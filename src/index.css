@@ -1,0 +1,266 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  line-height:1.625;
+  /* font-size: 14px; */
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tailwind custom animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.4s ease-out;
+}
+
+.animate-slideDown > * {
+  animation: fadeInUp 0.4s ease-out;
+  animation-fill-mode: both;
+}
+
+.animate-slideDown > *:nth-child(1) {
+  animation-delay: 0.08s;
+}
+
+.animate-slideDown > *:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.animate-slideDown > *:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+/* Tech Stack Scroll Animations */
+/* With 3 copies, scroll by 33.33% (1/3) for seamless infinite loop */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0) translateZ(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3)) translateZ(0);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(calc(-100% / 3)) translateZ(0);
+  }
+  100% {
+    transform: translateX(0) translateZ(0);
+  }
+}
+
+.scroll-container-left {
+  animation: scrollLeft 20s linear infinite;
+  display: flex;
+  gap: 1.5rem;
+  will-change: transform;
+  /* Tối ưu performance */
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.scroll-container-right {
+  animation: scrollRight 20s linear infinite;
+  display: flex;
+  gap: 1.5rem;
+  will-change: transform;
+  /* Tối ưu performance */
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.scroll-container-left-img{
+  animation: scrollLeft 25s linear infinite;
+  display: flex;
+  gap: 1.5rem;
+  will-change: transform;
+  /* Tối ưu performance */
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.scroll-container-right-img{
+  animation: scrollRight 25s linear infinite;
+  display: flex;
+  gap: 1.5rem;
+  will-change: transform;
+  /* Tối ưu performance */
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.scroll-container-left-img:hover,
+.scroll-container-right-img:hover {
+  animation-play-state: paused;
+}
+
+
+.scroll-container-left:hover,
+.scroll-container-right:hover {
+  animation-play-state: paused;
+}
+
+/* Container wrapper */
+.tech-stack-wrapper {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 5%,
+    black 95%,
+    transparent 100%
+  );
+}
+
+/* Image label hover effect */
+.group:hover .bg-green-500 {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+}
+
+/* Text Justify với spacing đồng đều */
+.text-justify-enhanced {
+  text-align: justify;
+  text-align-last: left; /* Dòng cuối căn trái */
+  word-spacing: 0.03em; /* Khoảng cách từ đồng đều */
+  hyphens: auto; /* Tự động ngắt từ nếu cần */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+/* Modal Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* ============================================
+   SCROLL VISIBILITY ANIMATIONS
+   ============================================ */
+
+/* Base state - Ẩn */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Visible state - Hiện */
+.scroll-fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Các variant khác */
+.scroll-fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-fade-up.scroll-fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fade-down {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-fade-down.scroll-fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fade-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, 
+              transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.scroll-fade-scale.scroll-fade-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Fast variant */
+.scroll-fade-fast {
+  transition-duration: 0.4s;
+}
+
+/* Slow variant */
+.scroll-fade-slow {
+  transition-duration: 1s;
+}
+
+/* Delay variants cho stagger effect */
+.scroll-fade-delay-1 { transition-delay: 0.1s; }
+.scroll-fade-delay-2 { transition-delay: 0.2s; }
+.scroll-fade-delay-3 { transition-delay: 0.3s; }
+.scroll-fade-delay-4 { transition-delay: 0.4s; }
+.scroll-fade-delay-5 { transition-delay: 0.5s; }
