@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../assets/avatar.webp";
+import avatar from "../assets/avatarDisney.png";
 import { useScrollVisibility } from "../customHooks/useScrollSpy";
 
 const About = ({ isDarkMode }) => {

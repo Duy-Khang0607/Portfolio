@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import avatar from '../assets/avatar copy.webp';
+import avatar from "../assets/avatarDisney.png";
 
 const LoadingPage = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
@@ -170,7 +170,7 @@ const LoadingPage = ({ onLoadingComplete }) => {
                     <div className="w-1 h-1 bg-white rounded-full animate-pulse" />
                   </div>
                 </div>
-                <h3 className="text-green-400 font-mono text-xs font-semibold tracking-wide">Resource Monitor</h3>
+                <h3 className="text-green-400 font-mono text-xs font-semibold tracking-wide">Khang Nguyen</h3>
               </div>
 
               <div className="space-y-2 font-mono text-[10px]">

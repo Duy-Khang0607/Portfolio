@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import Loading from "./Loading";
 import ContactForm from "./ContactForm";
 import { useScrollVisibility } from "../customHooks/useScrollSpy";
 
@@ -358,79 +357,6 @@ const Contact = ({ isDarkMode }) => {
         </div>
 
         <div className={`lg:w-1/2 scroll-fade-scale scroll-fade-delay-2 ${isVisible ? 'scroll-fade-visible' : ''}`}>
-          {/* <div class="p-6 md:p-8 bg-[#0d1117] rounded-xl border border-gray-100/10 shadow-lg font-mono text-gray-100 min-h-[500px] relative">
-            <div className="relative flex items-center justify-between px-4 py-2 bg-[#161b22] text-xs text-gray-400 rounded-t-lg">
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
-                <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
-                <span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
-                <span class="ml-3">contact-form.js</span>
-              </div>
-            </div>
-            <form
-              className="p-6 space-y-4 rounded-b-lg h-[580px]"
-              onSubmit={handleSubmit}
-            >
-              {isloading ? (
-                <Loading />
-              ) : (
-                <>
-                  <pre className="text-green-400 text-sm">
-                    function sendMessage(){"{"}
-                  </pre>
-                  <div>
-                    <span className="text-cyan-400 text-sm">
-                      const name = "
-                    </span>
-                    <input
-                      placeholder="Enter your full name"
-                      className="bg-transparent border border-gray-700 rounded px-3 py-2 w-full my-2 text-gray-200 focus:outline-none focus:border-green-500 transition-colors"
-                      type="text"
-                      name="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    ></input>
-                    <span className="text-cyan-400 text-sm">";</span>
-                  </div>
-                  <div>
-                    <span className="text-cyan-400 text-sm">
-                      const email = "
-                    </span>
-                    <input
-                      placeholder="Enter your full name"
-                      className="bg-transparent border border-gray-700 rounded px-3 py-2 w-full my-2 text-gray-200 focus:outline-none focus:border-green-500 transition-colors"
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      name="email"
-                    ></input>
-                    <span className="text-cyan-400 text-sm">";</span>
-                  </div>
-                  <div>
-                    <span className="text-cyan-400 text-sm">
-                      const message = "
-                    </span>
-                    <textarea
-                      placeholder="Enter your full message"
-                      className="bg-transparent border border-gray-700 rounded px-3 py-2 w-full my-2 text-gray-200 focus:outline-none focus:border-green-500 transition-colors"
-                      type="text"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      name="message"
-                    ></textarea>
-                    <span className="text-cyan-400 text-sm">";</span>
-                  </div>
-                  <button
-                    type="submit"
-                    className="bg-green-500 text-black px-6 py-2 rounded-lg font-bold hover:bg-green-400 transition disabled:opacity-50"
-                  >
-                    ▶ return sendMessage();
-                  </button>
-                  <pre className="text-green-400 text-sm">{"}"}</pre>
-                </>
-              )}
-            </form>
-          </div> */}
           <ContactForm isDarkMode={isDarkMode}/>
         </div>
       </div>

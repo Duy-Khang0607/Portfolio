@@ -32,7 +32,7 @@ const Experience = ({ isDarkMode }) => {
             {/* IDB */}
             <div className="relative flex flex-col md:flex-row items-center justify-center w-full">
               <div
-                className={`hidden md:block w-full md:w-[80%] lg:w-[80%] md:mr-4 p-6 border rounded bg-[#282a36] transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg border-glow-green scroll-fade-up scroll-fade-delay-1 ${isVisible ? 'scroll-fade-visible' : ''} ${isDetails1 ? 'max-h-[1000px]' : 'max-h-[200px]'}`}
+                className={`md:block w-full md:w-[80%] lg:w-[80%] md:mr-4 p-6 border rounded bg-[#282a36] transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg border-glow-green scroll-fade-up scroll-fade-delay-1 ${isVisible ? 'scroll-fade-visible' : ''} ${isDetails1 ? 'max-h-auto' : 'max-h-[200px]'}`}
                 style={{ borderColor: "rgb(80, 250, 123)" }}
               >
                 <div className="flex justify-between items-center mb-2">
@@ -51,7 +51,7 @@ const Experience = ({ isDarkMode }) => {
                 </div>
                 <div className={`mt-4 border-t pt-4 border-[#6272a4] overflow-hidden transition-all duration-500 ease-in-out ${
                   isDetails1 
-                    ? 'max-h-[2000px] opacity-100 translate-y-0' 
+                    ? 'max-h-auto opacity-100 translate-y-0' 
                     : 'max-h-0 opacity-0 -translate-y-4 border-t-0 mt-0 pt-0'
                 }`}>
                   <div className={`${isDetails1 ? 'animate-slideDown' : ''}`}>
@@ -143,7 +143,7 @@ const Experience = ({ isDarkMode }) => {
                 <span className="w-1 bg-[#6272a4] flex-1 mt-2"></span>
               </div>
               <div
-                className={`hidden md:block w-full md:w-[80%] lg:w-[80%] md:ml-4 p-6 border rounded bg-[#282a36] transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg border-glow-blue scroll-fade-up scroll-fade-delay-2 ${isVisible ? 'scroll-fade-visible' : ''}`}
+                className={`md:block w-full md:w-[80%] lg:w-[80%] md:ml-4 p-6 border rounded bg-[#282a36] transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-lg border-glow-blue scroll-fade-up scroll-fade-delay-2 ${isVisible ? 'scroll-fade-visible' : ''} ${isDetails2 ? 'max-h-auto' : 'max-h-[200px]'}`}
                 style={{ borderColor: "rgb(139, 233, 253)" }}
               >
                 <div className="flex justify-between items-center mb-2">
@@ -161,7 +161,7 @@ const Experience = ({ isDarkMode }) => {
                 <div className="text-green-400 text-sm mb-2">INTER-K JSC</div>
                 <div className={`mt-4 border-t pt-4 border-[#6272a4] overflow-hidden transition-all duration-500 ease-in-out ${
                   isDetails2 
-                    ? 'max-h-[2000px] opacity-100 translate-y-0' 
+                    ? 'max-h-auto opacity-100 translate-y-0' 
                     : 'max-h-0 opacity-0 -translate-y-4 border-t-0 mt-0 pt-0'
                 }`}>
                   <div className={`${isDetails2 ? 'animate-slideDown' : ''}`}>

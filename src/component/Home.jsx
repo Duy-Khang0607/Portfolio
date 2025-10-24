@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import avatar from "../assets/avatar.webp";
+import avatarDisney from "../assets/avatarDisney.png";
 import { formatTime } from "../utils/formatTime";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../JSON/project";
@@ -41,10 +41,10 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
                 data-nimg="fill"
                 className="object-cover transition-opacity duration-300"
                 sizes="(max-width: 768px) 100vw, 200px"
-                src={avatar}
+                src={avatarDisney}
                 style={{
                   position: "absolute",
-                  height: "100%",
+                  height: "100%", 
                   width: "100%",
                   inset: "0px",
                   color: "transparent",
