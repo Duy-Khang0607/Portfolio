@@ -166,17 +166,17 @@ const Contact = ({ isDarkMode }) => {
                     <span className="text-[#58a6ff]">NextJS</span>
                     <span
                       className="font-semibold"
-                      style={{ color: "rgb(172 99 138)" }}
+                      style={{ color: "rgb(88, 166, 255)" }}
                     >
-                      Intermediate
+                      Experienced
                     </span>
                   </div>
                   <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
                     <div
                       className="h-full rounded-full transition-all duration-500"
                       style={{
-                        width: "70%",
-                        backgroundColor: "rgb(172 99 138)",
+                        width: "75%",
+                        backgroundColor: "rgb(88, 166, 255)",
                       }}
                     ></div>
                   </div>
@@ -223,10 +223,10 @@ const Contact = ({ isDarkMode }) => {
                 </div>
                 <div className="space-y-1">
                   <div className="flex justify-between text-xs font-mono">
-                    <span className="text-[#58a6ff]">MySQL/MongoDB</span>
+                    <span className="text-[#58a6ff]">Socket.IO</span>
                     <span
                       className="font-semibold"
-                      style={{ color: "#d7b145" }}
+                      style={{ color: "rgb(88, 166, 255)" }}
                     >
                       Experienced
                     </span>
@@ -234,7 +234,27 @@ const Contact = ({ isDarkMode }) => {
                   <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
                     <div
                       className="h-full rounded-full transition-all duration-500"
-                      style={{ width: "65%", backgroundColor: "#d7b145" }}
+                      style={{
+                        width: "75%",
+                        backgroundColor: "rgb(88, 166, 255)",
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  <div className="flex justify-between text-xs font-mono">
+                    <span className="text-[#58a6ff]">MySQL/MongoDB</span>
+                    <span
+                      className="font-semibold"
+                      style={{ color: "#d7b145" }}
+                    >
+                      Intermediate
+                    </span>
+                  </div>
+                  <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                    <div
+                      className="h-full rounded-full transition-all duration-500"
+                      style={{ width: "50%", backgroundColor: "#d7b145" }}
                     ></div>
                   </div>
                 </div>
@@ -245,13 +265,13 @@ const Contact = ({ isDarkMode }) => {
                       className="font-semibold"
                       style={{ color: "#d7b145" }}
                     >
-                      Experienced
+                     Intermediate
                     </span>
                   </div>
                   <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
                     <div
                       className="h-full rounded-full transition-all duration-500"
-                      style={{ width: "65%", backgroundColor: "#d7b145" }}
+                      style={{ width: "50%", backgroundColor: "#d7b145" }}
                     ></div>
                   </div>
                 </div>
@@ -262,13 +282,13 @@ const Contact = ({ isDarkMode }) => {
                       className="font-semibold"
                       style={{ color: "#d7b145" }}
                     >
-                      Experienced
+                      Intermediate
                     </span>
                   </div>
                   <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
                     <div
                       className="h-full rounded-full transition-all duration-500"
-                      style={{ width: "65%", backgroundColor: "#d7b145" }}
+                      style={{ width: "50%", backgroundColor: "#d7b145" }}
                     ></div>
                   </div>
                 </div>

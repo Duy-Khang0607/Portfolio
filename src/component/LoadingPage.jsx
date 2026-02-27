@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import avatar from "../assets/avatarDisney.png";
+import avatar from "../assets/Anh_CV_AI-removebg-preview.png";
 
 const LoadingPage = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import avatarDisney from "../assets/avatarDisney.png";
+import avatarDisney from "../assets/Anh_CV_AI-removebg-preview.png";
 import { formatTime } from "../utils/formatTime";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../JSON/project";
@@ -44,40 +44,35 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
                 src={avatarDisney}
                 style={{
                   position: "absolute",
-                  height: "100%", 
+                  height: "100%",
                   width: "100%",
                   inset: "0px",
                   color: "transparent",
                 }}
               />
             </div>
-            <div>
+            <div className="w-full h-auto">
               <h1 className="text-2xl md:text-3xl font-light mb-2 tracking-tight text-green-500">
                 Hello!
                 <br />
                 I'm Khang Nguyen
               </h1>
               <p
-                className={`body-text font-medium text-justify-enhanced text-sm w-full ${
-                  isDarkMode ? "text-gray-500" : "text-black"
-                }`}
+                className={`font-medium text-justify-enhanced text-sm w-full ${isDarkMode ? "text-gray-500" : "text-black"
+                  }`}
               >
                 <span className="text-primary font-medium text-green-500">
                   Frontend Developer
-                </span>{" "}
-                specializing in building performant, secure, and scalable web
-                applications. Experienced in developing responsive interfaces,
-                optimizing user experience, and integrating robust frontend
-                architectures that support high-traffic environments.
+                </span>
+                {" "}specializing in building high-performance, secure, and scalable web applications. Experienced in developing responsive user interfaces, optimizing user experience, and implementing robust frontend architectures designed to support high-traffic environments.
               </p>
             </div>
             <div className="flex items-center gap-3 md:gap-4">
               <a
-                className={`text-gray-400 ${
-                  isDarkMode
-                    ? "hover:text-white bg-white/20 hover:bg-white/30"
-                    : "hover:text-black bg-gray-800/50 hover:bg-gray-800/70 text-white"
-                } transition-colors p-1 md:p-2 rounded-xl`}
+                className={`text-gray-400 ${isDarkMode
+                  ? "hover:text-white bg-white/20 hover:bg-white/30"
+                  : "hover:text-black bg-gray-800/50 hover:bg-gray-800/70 text-white"
+                  } transition-colors p-1 md:p-2 rounded-xl`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -92,11 +87,10 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
                 </svg>
               </a>
               <a
-                className={`text-gray-400 ${
-                  isDarkMode
-                    ? "hover:text-white bg-white/20 hover:bg-white/30"
-                    : "hover:text-black bg-gray-800/50 hover:bg-gray-800/70 text-white"
-                } transition-colors p-1 md:p-2 rounded-xl`}
+                className={`text-gray-400 ${isDarkMode
+                  ? "hover:text-white bg-white/20 hover:bg-white/30"
+                  : "hover:text-black bg-gray-800/50 hover:bg-gray-800/70 text-white"
+                  } transition-colors p-1 md:p-2 rounded-xl`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -122,25 +116,22 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
             <div className="space-y-4">
               <div>
                 <p
-                  className={`text-sm mb-1 ${
-                    isDarkMode ? "text-gray-500" : "text-black"
-                  }`}
+                  className={`text-sm mb-1 ${isDarkMode ? "text-gray-500" : "text-black"
+                    }`}
                 >
                   Current Time
                 </p>
                 <p
-                  className={`text-3xl font-mono ${
-                    isDarkMode ? "text-white" : "text-black"
-                  }`}
+                  className={`text-3xl font-mono ${isDarkMode ? "text-white" : "text-black"
+                    }`}
                 >
                   {formatTime(currentTime)}
                 </p>
                 <button
-                  className={`text-sm transition-colors flex items-center gap-1 mt-1 disabled:opacity-50 ${
-                    isDarkMode
-                      ? "text-gray-500 hover:text-gray-300"
-                      : "text-black"
-                  }`}
+                  className={`text-sm transition-colors flex items-center gap-1 mt-1 disabled:opacity-50 ${isDarkMode
+                    ? "text-gray-500 hover:text-gray-300"
+                    : "text-black"
+                    }`}
                 >
                   <span className="w-3 h-3 rounded-full bg-green-500 "></span>
                   Show My Location
@@ -148,9 +139,8 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
               </div>
               <div>
                 <p
-                  className={`text-sm mb-2 ${
-                    isDarkMode ? "text-gray-500" : "text-black"
-                  }`}
+                  className={`text-sm mb-2 ${isDarkMode ? "text-gray-500" : "text-black"
+                    }`}
                 >
                   When I don't have anything to do, I just create random thing
                   like below:
@@ -184,9 +174,8 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
               <div className="flex items-center gap-2">
                 <span className="section-title-dot w-2 h-2 bg-green-500 rounded-full transition-all duration-300 animate-pulse"></span>
                 <span
-                  className={`section-title-text font-bold ${
-                    isDarkMode ? "text-white" : "text-black"
-                  }`}
+                  className={`section-title-text font-bold ${isDarkMode ? "text-white" : "text-black"
+                    }`}
                 >
                   Overview
                 </span>
@@ -194,64 +183,53 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
             </h2>
             <div className="space-y-3 md:space-y-4 w-full">
               <p
-                className={`body-text font-medium text-justify-enhanced text-sm ${
-                  isDarkMode ? "text-gray-400" : "text-black"
-                }`}
+                className={`font-medium text-sm text-justify-enhanced ${isDarkMode ? "text-gray-400" : "text-black"
+                  }`}
               >
-                I am a passionate Frontend Developer with a strong foundation in
-                HTML5, CSS3, JavaScript, and React.js. With experience in both
-                UI/UX design and website optimization, I am dedicated to
-                creating seamless, high-performance user interfaces that enhance
-                the overall user experience.
+                Frontend Developer with 1+ years of experience building high-performance, scalable web applications using React and Next.js. Specialized in performance optimization, real-time systems, and clean component-based architecture.
               </p>
               <p
-                className={`body-text font-medium text-justify-enhanced text-sm ${
-                  isDarkMode ? "text-gray-400" : "text-black"
-                }`}
+                className={`body-text font-medium text-sm text-justify-enhanced ${isDarkMode ? "text-gray-400" : "text-black"
+                  }`}
               >
-                I have worked on various projects, including CRM systems and web
-                applications, where I utilized my skills in React.js,
-                TypeScript, and modern frameworks to build responsive and
-                user-friendly designs. I am constantly learning new tools and
-                technologies, with a focus on performance optimization,
-                scalability, and cross-browser compatibility. My goal is to
-                contribute to dynamic projects and deliver impactful web
-                solutions.
+                Experienced in developing production-grade applications including banking CRM systems, internal enterprise tools, and full-stack delivery platforms with authentication, payment integration, and real-time communication.
+              </p>
+              <p
+                className={`body-text font-medium text-sm text-justify-enhanced ${isDarkMode ? "text-gray-400" : "text-black"
+                  }`}
+              >
+                Strong focus on code maintainability, user experience, and measurable performance improvements. Passionate about modern frontend architecture, type safety, and building products that scale reliably in real-world environments.
               </p>
               <div className="flex flex-wrap gap-1 md:gap-2">
                 <span
-                  className={`px-2 py-0.5 rounded-full text-[9px] md:text-[10px] tracking-wider cursor-pointer transition-all duration-400 ${
-                    isDarkMode
-                      ? "text-gray-400 bg-white/20 hover:bg-white/30 hover:text-white"
-                      : "text-black hover:text-white bg-gray-800/50 hover:bg-gray-800/70"
-                  }`}
+                  className={`px-2 py-0.5 rounded-full text-[9px] md:text-[10px] tracking-wider cursor-pointer transition-all duration-400 ${isDarkMode
+                    ? "text-gray-400 bg-white/20 hover:bg-white/30 hover:text-white"
+                    : "text-black hover:text-white bg-gray-800/50 hover:bg-gray-800/70"
+                    }`}
                 >
                   Frontend Development
                 </span>
                 <span
-                  className={`px-2 py-0.5 rounded-full text-[9px] md:text-[10px] tracking-wider cursor-pointer transition-all duration-400 ${
-                    isDarkMode
-                      ? "text-gray-400 bg-white/20 hover:bg-white/30 hover:text-white"
-                      : "text-black hover:text-white bg-gray-800/50 hover:bg-gray-800/70"
-                  }`}
+                  className={`px-2 py-0.5 rounded-full text-[9px] md:text-[10px] tracking-wider cursor-pointer transition-all duration-400 ${isDarkMode
+                    ? "text-gray-400 bg-white/20 hover:bg-white/30 hover:text-white"
+                    : "text-black hover:text-white bg-gray-800/50 hover:bg-gray-800/70"
+                    }`}
                 >
                   Web Security
                 </span>
                 <span
-                  className={`px-2 py-0.5 rounded-full text-[9px] md:text-[10px] tracking-wider cursor-pointer transition-all duration-400 ${
-                    isDarkMode
-                      ? "text-gray-400 bg-white/20 hover:bg-white/30 hover:text-white"
-                      : "text-black hover:text-white bg-gray-800/50 hover:bg-gray-800/70"
-                  }`}
+                  className={`px-2 py-0.5 rounded-full text-[9px] md:text-[10px] tracking-wider cursor-pointer transition-all duration-400 ${isDarkMode
+                    ? "text-gray-400 bg-white/20 hover:bg-white/30 hover:text-white"
+                    : "text-black hover:text-white bg-gray-800/50 hover:bg-gray-800/70"
+                    }`}
                 >
                   UI/UX Design
                 </span>
                 <span
-                  className={`px-2 py-0.5 rounded-full text-[9px] md:text-[10px] tracking-wider cursor-pointer transition-all duration-400 ${
-                    isDarkMode
-                      ? "text-gray-400 bg-white/20 hover:bg-white/30 hover:text-white"
-                      : "text-black hover:text-white bg-gray-800/50 hover:bg-gray-800/70"
-                  }`}
+                  className={`px-2 py-0.5 rounded-full text-[9px] md:text-[10px] tracking-wider cursor-pointer transition-all duration-400 ${isDarkMode
+                    ? "text-gray-400 bg-white/20 hover:bg-white/30 hover:text-white"
+                    : "text-black hover:text-white bg-gray-800/50 hover:bg-gray-800/70"
+                    }`}
                 >
                   API Integration
                 </span>
@@ -264,9 +242,8 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
               <div className="flex items-center gap-2">
                 <span className="section-title-dot w-2 h-2 bg-green-500 rounded-full transition-all duration-300 animate-pulse"></span>
                 <span
-                  className={`section-title-text font-bold ${
-                    isDarkMode ? "text-white" : "text-black"
-                  }`}
+                  className={`section-title-text font-bold ${isDarkMode ? "text-white" : "text-black"
+                    }`}
                 >
                   Tech Stack
                 </span>
@@ -281,11 +258,10 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
                       {repeatedIcons?.map((icon, index) => (
                         <div
                           key={`top-${index}`}
-                          className={`flex-none w-10 h-10 relative group rounded-xl opacity-50 transition-all duration-300 ${
-                            isDarkMode
-                              ? "bg-white/20 hover:bg-white/30"
-                              : "bg-gray-800/50 hover:bg-gray-800/70 cursor-pointer"
-                          }`}
+                          className={`flex-none w-10 h-10 relative group rounded-xl opacity-50 transition-all duration-300 ${isDarkMode
+                            ? "bg-white/20 hover:bg-white/30"
+                            : "bg-gray-800/50 hover:bg-gray-800/70 cursor-pointer"
+                            }`}
                         >
                           <div className="tech-icon absolute inset-0 rounded-xl transition-all duration-300"></div>
                           <div className="relative h-full w-full p-2">
@@ -294,9 +270,8 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
                             </div>
                           </div>
                           <div
-                            className={`${
-                              isDarkMode ? "text-white" : "text-black"
-                            } opacity-0 group-hover:opacity-100 absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs tech-icon-text whitespace-nowrap transition-opacity duration-300`}
+                            className={`${isDarkMode ? "text-white" : "text-black"
+                              } opacity-0 group-hover:opacity-100 absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs tech-icon-text whitespace-nowrap transition-opacity duration-300`}
                           >
                             {icon.name}
                           </div>
@@ -310,11 +285,10 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
                       {repeatedIcons?.map((icon, index) => (
                         <div
                           key={`bottom-${index}`}
-                          className={`flex-none w-10 h-10 relative group rounded-xl opacity-50 transition-all duration-300 ${
-                            isDarkMode
-                              ? "bg-white/20 hover:bg-white/30"
-                              : "bg-gray-800/50 hover:bg-gray-800/70 cursor-pointer"
-                          }`}
+                          className={`flex-none w-10 h-10 relative group rounded-xl opacity-50 transition-all duration-300 ${isDarkMode
+                            ? "bg-white/20 hover:bg-white/30"
+                            : "bg-gray-800/50 hover:bg-gray-800/70 cursor-pointer"
+                            }`}
                         >
                           <div className="tech-icon absolute inset-0 rounded-xl transition-all duration-300"></div>
                           <div className="relative h-full w-full p-2">
@@ -323,9 +297,8 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
                             </div>
                           </div>
                           <div
-                            className={`${
-                              isDarkMode ? "text-white" : "text-black"
-                            } opacity-0 group-hover:opacity-100 absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs tech-icon-text whitespace-nowrap transition-opacity duration-300`}
+                            className={`${isDarkMode ? "text-white" : "text-black"
+                              } opacity-0 group-hover:opacity-100 absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs tech-icon-text whitespace-nowrap transition-opacity duration-300`}
                           >
                             {icon.name}
                           </div>
@@ -381,9 +354,8 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
             <div className="flex items-center gap-2">
               <span className="section-title-dot w-2 h-2 bg-green-500 rounded-full transition-all duration-300 animate-pulse"></span>
               <p
-                className={`text-xs tracking-wide ${
-                  isDarkMode ? "text-white" : "text-black"
-                }`}
+                className={`text-xs tracking-wide ${isDarkMode ? "text-white" : "text-black"
+                  }`}
               >
                 Open for work:{" "}
               </p>
@@ -403,9 +375,8 @@ const Home = ({ isDarkMode, toggleDarkMode, openContactModal }) => {
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[250px] md:max-w-[300px] text-center z-10">
               <p
-                className={`text-xs leading-relaxed italic backdrop-blur-sm bg-background/50 p-3 md:p-4 rounded-xl ${
-                  isDarkMode ? "text-gray-400" : "text-black"
-                }`}
+                className={`text-xs leading-relaxed italic backdrop-blur-sm bg-background/50 p-3 md:p-4 rounded-xl ${isDarkMode ? "text-gray-400" : "text-black"
+                  }`}
               >
                 "A website is a crucial component of any digital presence,
                 providing an engaging, responsive platform to showcase products

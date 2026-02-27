@@ -3,12 +3,12 @@
 * {
   box-sizing: border-box;
   line-height:1.625;
-  /* font-size: 14px; */
+  /* font-size: 16px; */
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -154,14 +154,17 @@ body {
   box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
 }
 
-/* Text Justify với spacing đồng đều */
+/* Text Justify với spacing đồng đều, khoảng cách từ tối thiểu */
 .text-justify-enhanced {
   text-align: justify;
-  text-align-last: left; /* Dòng cuối căn trái */
-  word-spacing: 0.03em; /* Khoảng cách từ đồng đều */
-  hyphens: auto; /* Tự động ngắt từ nếu cần */
+  text-justify: auto;
+  text-align-last: left;
+  word-spacing: -0.03em; 
+  letter-spacing: 0.01em;
+  hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 /* Modal Animations */
@@ -264,3 +267,26 @@ body {
 .scroll-fade-delay-3 { transition-delay: 0.3s; }
 .scroll-fade-delay-4 { transition-delay: 0.4s; }
 .scroll-fade-delay-5 { transition-delay: 0.5s; }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #7f8180;
+  border-radius: 10px;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s ease-in-out;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0f172a;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #989999;
+  box-shadow: 0 0 8px 3px #4a4b4aaa;
+  transform: scaleY(1.15);
+  cursor: pointer;
+}

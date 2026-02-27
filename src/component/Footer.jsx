@@ -11,7 +11,7 @@ const Footer = ({ isDarkMode }) => {
           className="relative z-10"
           style={{ color: isDarkMode ? 'rgb(156, 163, 175)' : 'rgb(0, 0, 0)' }}
         >
-          © 2025 All rights reserved.
+          © 2026 All rights reserved.
         </p>
       </div>
     </footer>

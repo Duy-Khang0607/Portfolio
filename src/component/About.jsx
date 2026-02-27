@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../assets/avatarDisney.png";
+import avatar from "../assets/Anh_CV_AI-removebg-preview.png";
 import { useScrollVisibility } from "../customHooks/useScrollSpy";
 
 const About = ({ isDarkMode }) => {
@@ -51,15 +51,13 @@ const About = ({ isDarkMode }) => {
           </div>
           <div className={`scroll-fade-up scroll-fade-delay-4 ${isVisible ? 'scroll-fade-visible' : ''}`}>
             <div
-              className={`rounded-xl border border-gray-700 shadow-lg p-5 font-mono text-[14px] ${
+              className={`rounded-xl border border-gray-700 shadow-lg p-5 font-mono text-[14px] text-justify ${
                 isDarkMode
                   ? "text-gray-200 bg-[#0d1117]/80"
                   : "text-black bg-[#0d1117]/50"
               }`}
             >
-              Experienced Frontend Developer specializing in JavaScript, UI/UX
-              Design, and Responsive Web Development. Crafting seamless and
-              scalable web experiences with modern frameworks and tools.
+              Frontend Developer specializing in React and Next.js, with a strong focus on performance optimization, scalability, and clean architecture. Experienced in building responsive, real-time web applications and enterprise-grade systems that deliver seamless user experiences under high-traffic conditions.
             </div>
           </div>
           <div className={`scroll-fade-up scroll-fade-delay-5 ${isVisible ? 'scroll-fade-visible' : ''}`}>
@@ -71,26 +69,38 @@ const About = ({ isDarkMode }) => {
               <span className="text-emerald-400">⚙</span> Tech Stack
             </h3>
             <div className="flex flex-wrap gap-3">
-              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-emerald-500/30 text-emerald-400 font-mono text-sm">
-                ReactJS
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-emerald-500/30 text-[#58C4DC] font-mono text-sm">
+                ReactJS/NextJS
               </span>
-              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-sky-500/30 text-sky-400 font-mono text-sm">
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-sky-500/30 text-[#22ab6e] font-mono text-sm">
                 JavaScript
               </span>
-              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-sky-500/30 text-sky-400 font-mono text-sm">
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-sky-500/30 text-[#22ab6e] font-mono text-sm">
                 TypeScript
               </span>
               <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-blue-500/30 text-blue-400 font-mono text-sm">
-                LowCode
+                Joget(Lowcode)
               </span>
-              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-green-400 font-mono text-sm">
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-[#3AA0C8] font-mono text-sm">
                 TailwindCSS/Ant Design
               </span>
-              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-green-400 font-mono text-sm">
-                Redux
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-[#764abc] font-mono text-sm">
+                Redux Thunk/Toolkit/Shadcn UI
               </span>
               <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-amber-400 font-mono text-sm">
                 MySQL/MongoDB
+              </span>
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-indigo-400 font-mono text-sm">
+                NextAuth
+              </span>
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-white/80 font-mono text-sm">
+                Socket.io
+              </span>
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-blue-400 font-mono text-sm">
+                Docker
+              </span>
+              <span className="px-4 py-2 rounded-lg bg-[#0d1117]/80 border border-green-500/30 text-cyan-400 font-mono text-sm">
+                PM2
               </span>
             </div>
           </div>
@@ -118,7 +128,7 @@ const About = ({ isDarkMode }) => {
                   }}
                 />
                 <div className="absolute inset-0 rounded-full ring-2 ring-emerald-400 animate-pulse"></div>
-              </div>
+              </div>z
               <button className="mt-3 px-4 py-1.5 text-sm rounded-md bg-emerald-500/20 text-emerald-1000 border border-emerald-500/40 font-medium text-white">
                 Contact Me
               </button>
