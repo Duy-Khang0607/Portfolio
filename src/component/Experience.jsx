@@ -36,13 +36,13 @@ const Experience = ({ isDarkMode }) => {
               >
                 <div className="flex justify-between items-center mb-2">
                   <div className="flex items-center space-x-2">
-                    <p className="font-bold text-[#bd93f9] text-lg">
+                    <p className="font-bold text-[#bd93f9] text-sm lg:text-lg">
                       Frontend Developer
                     </p>
                   </div>
-                  <div className="text-xs text-sky-400 font-mono text-right">
-                    <p className="font-bold">June - 2024</p>
-                    <p className="text-center">Present</p>
+                  <div className="text-xs text-sky-400 font-mono text-right w-full">
+                    <p className="font-bold w-full">June - 2024</p>
+                    <p className="font-bold w-full text-right">Present</p>
                   </div>
                 </div>
                 <div className="text-green-400 text-sm mb-2">
@@ -129,14 +129,14 @@ const Experience = ({ isDarkMode }) => {
               >
                 <div className="flex justify-between items-center mb-2">
                   <div className="flex items-center space-x-2">
-                    <p className="font-bold text-[#bd93f9] text-lg">
+                    <p className="font-bold text-[#bd93f9] text-sm lg:text-lg">
                       Frontend Developer
                     </p>
                   </div>
-                  <div className="text-xs text-sky-400 font-mono text-right">
-                    <p className="font-bold">May - 2023
+                  <div className="text-xs text-sky-400 font-mono text-right w-full">
+                    <p className="font-bold w-full">May - 2023
                     </p>
-                    <p className="">Sep - 2023</p>
+                    <p className="font-bold w-full">Sep - 2023</p>
                   </div>
                 </div>
                 <div className="text-green-400 text-sm mb-2">INTER-K JSC</div>

@@ -2,9 +2,22 @@ import React from "react";
 
 const ScrollTop = () => {
   return (
-    <section className="scroll-top fixed bottom-4 right-4">
+    <section className="scroll-top fixed -bottom-10 right-2 md:right-4">
       <div className="h-full w-full rounded-full bg-green-500 text-black flex items-center justify-center font-bold hover:bg-green-400 transition disabled:opacity-50 shadow-lg">
-        <button className="h-10 w-10 flex items-center justify-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <button
+          className="h-10 w-10 flex items-center justify-center cursor-pointer"
+          onClick={() => {
+            const scrollToTopSlow = () => {
+              const position = document.documentElement.scrollTop || document.body.scrollTop;
+              if (position > 0) {
+                const next = position - Math.max(1, position * 0.05);
+                window.scrollTo(0, next);
+                requestAnimationFrame(scrollToTopSlow);
+              }
+            };
+            scrollToTopSlow();
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
